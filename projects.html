@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <header>
+        <h1>My Projects Portfolio</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p id="intro">As a dedicated Computer Science student, I enjoy bringing ideas to life through code. 
+            Below are some of my personal projects that highlight my passion for problem-solving, 
+            creativity, and building real-world applications.</p>
+        <section>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h3>Project One</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Description of the first project goes here.</p>
+                        <a href="https://github.com/yourusername/project-one" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h3>Project Two</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Description of the second project goes here.</p>
+                        <a href="https://github.com/yourusername/project-two" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h3>Project Three</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Description of the third project goes here.</p>
+                        <a href="https://github.com/yourusername/project-three" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h3>Project Four</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Description of the fourth project goes here.</p>
+                        <a href="https://github.com/yourusername/project-four" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+    document.querySelectorAll('.card').forEach(card => {
+        card.addEventListener('click', () => {
+            card.classList.toggle('is-flipped');
+        });
+    });
+    </script>
+</body>
+</html>
